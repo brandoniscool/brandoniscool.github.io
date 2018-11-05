@@ -7,6 +7,15 @@ for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElemen
 mixpanel.init("d0f2e5b5e59e62d39204234990758039");</script><!-- end Mixpanel -->
 </head>
 <body>
+<script>
+  (function () {
+  if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
+    mixpanel.track("Video play");
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+})();
+</script>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
 </body>
